@@ -250,7 +250,7 @@
   </aside>
 
   <main
-    class="border-none rounded-xl grow flex flex-col p-0 justify-center sm:border sm:p-2"
+    class="border-none rounded-xl grow max-w-full flex flex-col p-0 justify-center sm:border sm:p-2"
   >
     <canvas
       bind:this={canvas}

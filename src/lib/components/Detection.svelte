@@ -74,7 +74,7 @@
 </script>
 
 <div class="min-h-full w-screen flex flex-col items-center p-4 gap-8 xl:flex-row sm:p-8">
-  <aside class="flex flex-col gap-8 min-w-sm w-sm max-w-full">
+  <aside class="flex flex-col gap-8 w-sm max-w-full">
     <Field.Field>
       <Field.Label>Radius: {store.radius}</Field.Label>
       <Slider
@@ -138,7 +138,7 @@
     <p class="text-center text-4xl font-bold sm:text-8xl">{store.circles.length}</p>
   </aside>
 
-  <main class="border-none rounded-xl grow flex flex-col p-0 justify-center sm:border sm:p-2">
+  <main class="border-none rounded-xl grow max-w-full flex flex-col p-0 justify-center sm:border sm:p-2">
     <canvas
       bind:this={canvas}
       class={[
