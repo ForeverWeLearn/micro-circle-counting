@@ -3,9 +3,6 @@
   import * as Tabs from "$lib/components/ui/tabs";
   import { store } from "@/store.svelte";
   import Detection from "@/components/Detection.svelte";
-  import sampleImg from "@/assets/sample.jpg";
-  import detectedImg from "@/assets/detected.jpg";
-  import annotatedImg from "@/assets/annotated.jpg";
 
   let detector: Detection;
 
@@ -65,7 +62,7 @@
     </label>
     <div class="flex flex-col gap-4 sm:flex-row">
       <figure>
-        <img class="w-sm max-w-full rounded-md" src={sampleImg} alt="Sample" />
+        <img class="w-sm max-w-full rounded-md" src="/sample.jpg" alt="Sample" />
         <figcaption class="italic text-sm text-center mt-2">
           1. Upload image
         </figcaption>
@@ -73,7 +70,7 @@
       <figure>
         <img
           class="w-sm max-w-full rounded-md"
-          src={detectedImg}
+          src="/detected.jpg"
           alt="Detected"
         />
         <figcaption class="italic text-sm text-center mt-2">
@@ -83,7 +80,7 @@
       <figure>
         <img
           class="w-sm max-w-full rounded-md"
-          src={annotatedImg}
+          src="/annotated.jpg"
           alt="Annotated"
         />
         <figcaption class="italic text-sm text-center mt-2">
