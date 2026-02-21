@@ -3,8 +3,11 @@
   import * as Tabs from "$lib/components/ui/tabs";
   import { store } from "@/store.svelte";
   import Detection from "@/components/Detection.svelte";
+  import { asset } from "$app/paths";
 
-  let detector: Detection;
+  let sampleImg = asset("/sample.jpg");
+  let detectedImg = asset("/detected.jpg");
+  let annotatedImg = asset("/annotated.jpg");
 
   async function handleFileUpload(event: Event) {
     const input = event.target as HTMLInputElement;
@@ -62,7 +65,7 @@
     </label>
     <div class="flex flex-col gap-4 sm:flex-row">
       <figure>
-        <img class="w-sm max-w-full rounded-md" src="/sample.jpg" alt="Sample" />
+        <img class="w-sm max-w-full rounded-md" src={sampleImg} alt="Sample" />
         <figcaption class="italic text-sm text-center mt-2">
           1. Upload image
         </figcaption>
@@ -70,7 +73,7 @@
       <figure>
         <img
           class="w-sm max-w-full rounded-md"
-          src="/detected.jpg"
+          src={detectedImg}
           alt="Detected"
         />
         <figcaption class="italic text-sm text-center mt-2">
@@ -80,7 +83,7 @@
       <figure>
         <img
           class="w-sm max-w-full rounded-md"
-          src="/annotated.jpg"
+          src={annotatedImg}
           alt="Annotated"
         />
         <figcaption class="italic text-sm text-center mt-2">
@@ -96,7 +99,7 @@
       <Tabs.Trigger value="annotation">Annotation</Tabs.Trigger>
     </Tabs.List>
     <Tabs.Content class="grow flex items-stretch" value="detection">
-      <Detection bind:this={detector} />
+      <Detection />
     </Tabs.Content>
     <Tabs.Content value="annotation">
       <Annotation />
