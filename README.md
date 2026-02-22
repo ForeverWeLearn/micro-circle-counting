@@ -1,15 +1,18 @@
-<p style="font-size: 2rem !important" align="center"><strong>○ Micro Circle Counting ○</strong></p>
+<h3 align="center">
+  <img src="src/lib/assets/favicon.svg" width="100" />
+  Micro Circle Counting
+</h3>
 
 <p align="center">
-  <img src="docs/imgs/sample.png" width="40%" align="middle">
+  <img src="docs/imgs/sample.png" width="40%" align="middle" />
   <span> → </span>
-  <img src="docs/imgs/result.png" width="40%" align="middle">
+  <img src="docs/imgs/result.png" width="40%" align="middle" />
 </p>
-<p align="center" style="font-size: 0.9rem"><i>Counting micro-components in semiconductor manufacturing images.</i></p>
+<h5 align="center"><i>Counting micro-components in semiconductor manufacturing images.</i></h5>
 
 &nbsp;
 
-<p style="font-size: 1.5rem !important">🎯 The Purpose</p>
+## 🎯 The Purpose
 
 This project solve a specific real-world task: _counting **dense**, **same-sized** circular micro-components from 10x magnified smartphone photos (blurry)._
 
@@ -17,12 +20,12 @@ This project solve a specific real-world task: _counting **dense**, **same-sized
 
 &nbsp;
 
-<p style="font-size: 1.5rem !important">👀 Live Demo</p>
+## 👀 Live Demo
 
 Try the application here: 👉
 **[Micro Circle Counting](https://foreverwelearn.github.io/micro-circle-counting/)** 👈
 
-#### How to use
+### How to use
 
 1. Upload your magnified image.
 2. Adjust the **Radius**, **Threshold** and other sliders until you feel right.
