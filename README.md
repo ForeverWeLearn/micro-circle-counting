@@ -1,4 +1,4 @@
-<h1 align="center">○ Micro Circle Counting ○</h1>
+<h3 style="font-size: 2rem" align="center">○ Micro Circle Counting ○</h3>
 
 <p align="center">
   <img src="docs/imgs/sample.png" width="40%" align="middle">
@@ -6,6 +6,11 @@
   <img src="docs/imgs/result.png" width="40%" align="middle">
 </p>
 <p align="center" style="font-size: 0.9rem"><i>Counting micro-components in semiconductor manufacturing images.</i></p>
+
+&nbsp;
+
+---
+
 &nbsp;
 
 <h3 style="font-size: 1.5rem">🎯 The Purpose</h3>
