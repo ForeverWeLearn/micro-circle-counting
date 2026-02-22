@@ -1,12 +1,12 @@
 <h3 align="center">
-  <img src="src/lib/assets/favicon.svg" width="100" />
+  <img src="src/lib/assets/favicon.svg" width="100" alt="Icon"/><br/>
   Micro Circle Counting
 </h3>
 
 <p align="center">
-  <img src="docs/imgs/sample.png" width="40%" align="middle" />
+  <img src="docs/imgs/sample.png" width="40%" align="middle"/>
   <span> → </span>
-  <img src="docs/imgs/result.png" width="40%" align="middle" />
+  <img src="docs/imgs/result.png" width="40%" align="middle"/>
 </p>
 <h5 align="center"><i>Counting micro-components in semiconductor manufacturing images.</i></h5>
 
@@ -14,7 +14,8 @@
 
 ## 🎯 The Purpose
 
-This project solve a specific real-world task: _counting **dense**, **same-sized** circular micro-components from 10x magnified smartphone photos (blurry)._
+This project solve a specific real-world task:  
+_"Counting **dense**, **same-sized** circular micro-components from 10x magnified smartphone photos."_
 
 <p align="center"><img  src="docs/imgs/site.png" width="800" align="middle"></p>
 
