@@ -8,7 +8,7 @@
 <p align="center" style="font-size: 0.9rem"><i>Counting micro-components in semiconductor manufacturing images.</i></p>
 &nbsp;
 
-## 🎯 The Purpose
+<h3 style="font-size: 1.25rem">🎯 The Purpose</h3>
 
 This project solve a specific real-world task: _counting **dense**, **same-sized** circular micro-components from 10x magnified smartphone photos (blurry)._
 
@@ -16,12 +16,12 @@ This project solve a specific real-world task: _counting **dense**, **same-sized
 
 &nbsp;
 
-## 👀 Live Demo
+<h3 style="font-size: 1.25rem">👀 Live Demo</h3>
 
 Try the application here: 👉
 **[Micro Circle Counting](https://foreverwelearn.github.io/micro-circle-counting/)** 👈
 
-### How to use
+#### How to use
 
 1. Upload your magnified image.
 2. Adjust the **Radius**, **Threshold** and other sliders until you feel right.
