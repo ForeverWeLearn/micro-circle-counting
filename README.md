@@ -8,7 +8,7 @@
   <span> → </span>
   <img src="docs/imgs/result.png" width="40%" align="middle"/>
 </p>
-<sup align="center"><i>Counting micro-components in semiconductor manufacturing images.</i></sup>
+<p align="center"><sup><i>Counting micro-components in semiconductor manufacturing images.</i></sup></p>
 
 &nbsp;
 
