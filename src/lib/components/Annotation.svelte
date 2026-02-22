@@ -22,13 +22,6 @@
   let draggedId: string | null = null;
   let dragOffset = { x: 0, y: 0 };
 
-  onMount(() => {
-    if (canvas) {
-      ctx = canvas.getContext("2d");
-    }
-    generatePalette();
-  });
-
   let sortedCircles = $derived.by(() => {
     const sorted = [...store.circles];
     const tol = store.radius;
@@ -42,6 +35,13 @@
       );
     }
     return sorted;
+  });
+
+  onMount(() => {
+    if (canvas) {
+      ctx = canvas.getContext("2d");
+    }
+    generatePalette();
   });
 
   $effect(() => {
@@ -68,7 +68,10 @@
   }
 
   function onMouseDown(e: MouseEvent) {
-    if (e.button !== 0) return; // Only left click
+    if (e.button !== 0) {
+      return;
+    }
+
     const pos = getMousePos(e);
     const idx = store.circles.findIndex(
       (c) => Math.hypot(pos.x - c.x, pos.y - c.y) <= store.radius,
@@ -115,14 +118,18 @@
   }
 
   function draw() {
-    if (!store.image || !ctx || !canvas) return;
+    if (!store.image || !ctx || !canvas) {
+      return;
+    }
 
     canvas.width = store.image.width;
     canvas.height = store.image.height;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    if (store.image) ctx.drawImage(store.image, 0, 0);
+    if (store.image) {
+      ctx.drawImage(store.image, 0, 0);
+    }
 
     const safeStep = Math.max(1, stripStep || 1);
 
@@ -136,7 +143,9 @@
         color = Math.floor(index / 10) % 2 === 1 ? "#ffc107" : "#00d4ff";
       }
 
-      if (!ctx) return;
+      if (!ctx) {
+        return;
+      }
       ctx.save();
       ctx.beginPath();
       ctx.arc(c.x, c.y, store.radius, 0, Math.PI * 2);
@@ -176,17 +185,14 @@
   }
 
   function exportPng() {
-    if (!store.image) return;
+    if (!store.image) {
+      return;
+    }
+
     const link = document.createElement("a");
     link.download = `annotated_img.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
-  }
-
-  function clearAll() {
-    if (confirm("Clear all?")) {
-      store.circles = [];
-    }
   }
 </script>
 

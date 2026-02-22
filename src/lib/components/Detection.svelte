@@ -7,11 +7,17 @@
 
   let canvas: HTMLCanvasElement;
   let ctx: CanvasRenderingContext2D;
+
   let isProcessing = $state(false);
   let renderId = 0;
 
   onMount(() => {
     ctx = canvas.getContext("2d", { willReadFrequently: true })!;
+  });
+
+  $effect(() => {
+    store.image;
+    triggerRedraw();
   });
 
   function renderAndProcess() {
@@ -66,14 +72,11 @@
       renderAndProcess();
     }, 100);
   }
-
-  $effect(() => {
-    store.image;
-    triggerRedraw();
-  });
 </script>
 
-<div class="min-h-full w-screen flex flex-col items-center p-4 gap-8 xl:flex-row sm:p-8">
+<div
+  class="min-h-full w-screen flex flex-col items-center p-4 gap-8 xl:flex-row sm:p-8"
+>
   <aside class="flex flex-col gap-8 w-sm max-w-full">
     <Field.Field>
       <Field.Label>Radius: {store.radius}</Field.Label>
@@ -135,10 +138,14 @@
       </Field.Field>
     </div>
 
-    <p class="text-center text-4xl font-bold sm:text-8xl">{store.circles.length}</p>
+    <p class="text-center text-4xl font-bold sm:text-8xl">
+      {store.circles.length}
+    </p>
   </aside>
 
-  <main class="border-none rounded-xl grow max-w-full flex flex-col p-0 justify-center sm:border sm:p-2">
+  <main
+    class="border-none rounded-xl grow max-w-full flex flex-col p-0 justify-center sm:border sm:p-2"
+  >
     <canvas
       bind:this={canvas}
       class={[
