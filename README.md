@@ -16,7 +16,7 @@ This project solve a specific real-world task: _counting **dense**, **same-sized
 
 &nbsp;
 
-## 🔗 Live Demo
+## 👀 Live Demo
 
 Try the application here: 👉
 **[Micro Circle Counting](https://foreverwelearn.github.io/micro-circle-counting/)** 👈
