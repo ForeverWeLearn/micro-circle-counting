@@ -1,14 +1,14 @@
 <h1 align="center">○ Micro Circle Counting ○</h1>
 
 <p align="center">
-  <img src="docs/imgs/sample.png" width="360" align="middle">
+  <img src="docs/imgs/sample.png" width="40%" align="middle">
   <span> → </span>
-  <img src="docs/imgs/result.png" width="360" align="middle">
+  <img src="docs/imgs/result.png" width="40%" align="middle">
 </p>
 <p align="center" style="font-size: 0.9rem"><i>Counting micro-components in semiconductor manufacturing images.</i></p>
 &nbsp;
 
-<h3 style="font-size: 1.25rem">🎯 The Purpose</h3>
+<h3 style="font-size: 1.5rem">🎯 The Purpose</h3>
 
 This project solve a specific real-world task: _counting **dense**, **same-sized** circular micro-components from 10x magnified smartphone photos (blurry)._
 
@@ -16,7 +16,7 @@ This project solve a specific real-world task: _counting **dense**, **same-sized
 
 &nbsp;
 
-<h3 style="font-size: 1.25rem">👀 Live Demo</h3>
+<h3 style="font-size: 1.5rem">👀 Live Demo</h3>
 
 Try the application here: 👉
 **[Micro Circle Counting](https://foreverwelearn.github.io/micro-circle-counting/)** 👈
